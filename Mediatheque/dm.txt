@@ -1,0 +1,43 @@
+Le theme d'origine est dans C7-S1-1-1GestionEmpruntExo3V1
+
+Déjà fait dans les versions precedentes : 
+
+1- finir exo session avant de commencer celui-ci
+2 - rechercher un theme bootstrap sur le net
+3 - recaler le design
+4 - transformer les pages html en jsp
+4b - rendre dynamiques toutes les urls (jsp, servlets, css, js ...)
+	mettre les navbar, footer, liens css ou js dans des "include" pour éviter d'avoir à faire les modifs dans toutes les pages
+	navbar.jsp, bootstrapHeader.jsp et boostrapFooter.jsp en include
+5 - séparer les servlets en servlet + jsp si besoin
+
+Identification 	: 	mise en place d'une page error si l'abonne n'existe pas
+CreerEmprunt	:	redirection vers errorPage.jsp si on arrive dans la servlet en get			***	
+ListeEmprunt	: 	redirection vers errorPage.jsp si l'abonne n'est pas connecte sinon affichage de listeEmprunt.jsp
+
+6 - Apres identification, afficher prenom et nom sur index.jsp
+	Je l'ai ajoute à la navbar
+
+7 - rediriger creerEmprunt vers le formulaire de creation d'emprunt.
+
+8 - Lors de la création d'un emprunt, afficher le message : "l'emprunt n° x a été ajouté"
+x  9 - Sécuriser les JSP (WEB-INF)
+x 10 - paramétrer le chemin de la page d'erreur => voir creerEmprunt.java
+x 11 - a - En tant qu'abonné, je ne peux lister les emprunts que si je suis connecté.
+x 11 - b - En tant que salarié, je ne peux créer un emprunt que si je suis connecté.
+x 12 - En tant qu'utilisateur, si ma connexion échoue, je suis redirigé vers une page d'erreur. 
+x 13 - En tant qu'utilisateur, j'ai la possibilité de me déconnecter. 
+x 14 - En tant qu'utilisateur, je me connecte à mon espace personnel pour modifier mon mot de passe et/ou mon email. 
+x 15 - En tant que salarié, je choisis l'abonné de l'emprunt que je crée dans une liste déroulante.
+x 16 - En tant que salarié, je choisis les livres empruntés dans une liste déroulante.
+x 17 - En tant qu'administrateur (login root), je peux supprimer un abonné à partir de l'écran de consultation de la liste des abonnés.
+
+===
+A Faire : 
+Mettre en place un filtre verifiant que l'abonne est en session avant de :
+creer, modifier, supprimer ou lister les abonnes
+creer ou liste les emprunts
+
+
+
+
